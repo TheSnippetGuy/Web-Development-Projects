@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 10px;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+.parallax-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+.background,
+.heading {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  text-align: center;
+}
+.background {
+  transform: translateZ(-40px) scale(5.2);
+}
+.fa {
+  margin-right: 1rem;
+}
+.main-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-150px);
+  font-size: 1.2rem;
+  background-color: white;
+  border-radius: 55px;
+  text-align: center;
+  padding: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+section {
+  background-color: #fff;
+  color: rgb(45, 45, 45);
+  padding: 1.5rem 0;
+}
+
+.bg {
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 480px;
+  width: 100%;
+}
+
+.section-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100px);
+  background-color: white;
+  border-radius: 25px;
+  padding: 22px 20px 22px 15px;
+  color: black;
+}
+
+.wonder-info {
+  padding: 4rem 6rem;
+  font-size: 1rem;
+  text-align: justify;
+  font-weight: 500;
+}
+
+.bg-1 {
+  background-image: url(./Images/Taj_Mahal.jpg);
+}
+.bg-2 {
+  background-image: url(./Images/Great_wall_of_china.jpg);
+}
+.bg-3 {
+  background-image: url(./Images/Chichen_Itza.jpg);
+}
+.bg-4 {
+  background-image: url(./Images/Petra.jpg);
+}
+.bg-5 {
+  background-image: url(./Images/Machu_Picchu.jpg);
+}
+.bg-6 {
+  background-image: url(./Images/Christ_the_Redeemer.jpg);
+}
+.bg-7 {
+  background-image: url(./Images/Colosseum.jpg);
+}
