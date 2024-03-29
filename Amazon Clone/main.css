@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.card {
+  background: white;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  margin-top: 16px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

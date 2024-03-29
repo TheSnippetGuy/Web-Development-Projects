@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon.com. Spend less. Smile more.</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="wrapper h-[100%] w-[100%] overflow-hidden">
+      <!-- Header Section  -->
+      <header>
+        <!-- Navbar section  -->
+        <nav class="text-white bg-slate-900 h-[60px] flex justify-evenly px-4 max-lg:justify-between items-center">
+          <!-- logo -->
+          <div class="flex justify-between items-center p-1 border border-transparent hover:border-white">
+            <img src="./assets/logo.png" alt="" class="h-8 w-24 mt-2" />
+          </div>
+
+          <!-- Hamburger Icon -->
+          <div class="hidden max-xl:block max-lg:block">
+            <i class="fa-solid fa-bars mr-2 text-[20px] "></i>
+          </div>
+
+          <!-- Location Div  -->
+          <div class="text-white text-[14px] p-1 border max-lg:hidden max-md:hidden border-transparent hover:border-white">
+            <p class="leading-0 text-[12px]">&nbsp;&nbsp;Deliver to</p>
+            <p class="font-bold">
+              <i class="fa-solid fa-location-dot text-[20px]"></i>
+              India
+            </p>
+          </div>
+
+          <!-- Search Bar  -->
+          <div class="text-black flex h-12 p-1 max-lg:hidden max-md:hidden">
+            <select
+              name=""
+              id=""
+              class="bg-[#e6e6e6] px-2 rounded-lg rounded-r-none"
+            >
+            <option value="">All</option>
+            </select>
+            <input
+              type="text"
+              placeholder="Search Amazon"
+              class="w-[780px] pl-2 text-base"
+            />
+            <div class="bg-orange-300 rounded-lg rounded-l-none p-2">
+              <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+            </div>
+          </div>
+
+          <!-- country   -->
+          <div
+            class="flex p-1 border justify-center items-end max-lg:hidden max-md:hidden border-transparent hover:border-white"
+          >
+            <img src="./assets/India.png" alt="" class="h-4 w-5" />
+            <select
+              name=""
+              id=""
+              class="bg-transparent cursor-pointer font-bold"
+            >
+              <option value="IN">IN</option>
+            </select>
+          </div>
+
+          <!-- LogIn Section  -->
+          <div class="p-1 border border-transparent max-lg:hidden max-md:hidden hover:border-white">
+            <p class="text-[12px] font-medium">Hello, sign in</p>
+            <select
+              name=""
+              id=""
+              class="bg-slate-900 text-[14px] font-bold text-white"
+            >
+              <option class="">Account & Lists</option>
+            </select>
+          </div>
+
+          <!-- returns & Order  -->
+          <div
+            class="p-1 text-[14px] border max-lg:hidden max-md:hidden border-transparent hover:border-white"
+          >
+            <p class="text-[12px] font-medium">Returns</p>
+            <p class="font-bold">& Orders</p>
+          </div>
+
+          <div
+            class="relative flex justify-center max-lg:hidden max-md:hidden items-end p-1 border border-transparent hover:border-white"
+          >
+            <img src="./assets/cart.png" alt="" class="h-8 w-10" />
+            <p
+              class="absolute right-12 bottom-4 text-orange-300 text-lg font-bold"
+            >
+              0
+            </p>
+            <p class="font-bold">Cart</p>
+          </div>
+        </nav>
+        <!-- End of Navbar section  -->
+
+        <!-- Header Links  -->
+        <div
+          class="bg-slate-800 text-[14px]  text-white py-2 px-6 flex items-center max-lg:items-baseline max-lg:justify-evenly justify-start"
+        >
+          <p
+            class="mr-4 font-bold text-[16px] p-1 border hover:cursor-pointer hover:rounded-sm border-transparent hover:border-white"
+          >
+            <i class="fa-solid fa-bars mr-2 text-[20px] max-lg:hidden "></i>All
+          </p>
+          <ul class="flex gap-4 items-center">
+            <li class="p-1 border hover:cursor-pointer hover:rounded-sm border-transparent hover:border-white">
+              Today's Deals
+            </li>
+            <li class="p-1 border hover:cursor-pointer hover:rounded-sm border-transparent hover:border-white">
+              Customer Service
+            </li>
+            <li class="p-1 border hover:cursor-pointer hover:rounded-sm border-transparent hover:border-white">
+              Registry
+            </li>
+            <li class="p-1 border hover:cursor-pointer hover:rounded-sm border-transparent hover:border-white">
+              Gift Cards
+            </li>
+            <li class="p-1 border hover:cursor-pointer hover:rounded-sm border-transparent hover:border-white">
+              Sell
+            </li>
+          </ul>
+        </div>
+        <!-- End of Header Links  -->
+      </header>
+      <!-- End of Header Section  -->
+
+      <!-- Main Section  -->
+      <section class="bg-[#e6e6e6] mx-2 pb-4">
+        <div id="bg-image" class=" bg-[url(./assets/bg3.jpeg)]  bg-cover bg-no-repeat h-80 flex justify-center items-end">
+          <p class="text-sm w-[98%] bg-white text-center py-3 mb-10">
+            You are on amazon.com. You can also shop on Amazon India for
+            millions of products with fast local delivery.
+            <a href="" class="text-[#007185] hover:underline hover:text-orange-400">
+              Click here to go to amazon.in
+            </a>
+          </p>
+        </div>
+
+        <!-- Card Section  -->
+        <div class="card-container mx-4 mt-2 grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 
+        sm:grid-cols-1 gap-x-4 grid-rows-2 sm:place-items-center">
+            <!-- Card - 1  -->
+            <div class="card bg-white flex flex-col px-4 max-lg:pl-4 max-lg:pr-2 items-start">
+              <h2 class="font-bold text-[21px] leading-7">Gaming Accessories</h2>
+              <div class="grid grid-cols-2 mt-2 gap-2 ">
+                <div class="mb-2">
+                <img src="./assets/asset 7.jpeg" alt="" class="object-cover" />
+                <p class="text-xs pt-2 hover:underline cursor-pointer hover:text-orange-400">
+                  Headsets
+                </p>
+                </div>
+                <div class="mb-2">
+                  <img src="./assets/asset 8.jpeg" alt="" class="mr-4" />
+                  <p class="text-xs pt-2 hover:underline cursor-pointer hover:text-orange-400">
+                    Keyboards
+                  </p>
+                </div>
+                <div class="mb-2">
+                  <img src="./assets/asset 9.jpeg" alt="" class="mr-4" />
+                  <p class="text-xs pt-2hover:underline cursor-pointer hover:text-orange-400">
+                    Computer mice
+                  </p>
+                </div>
+                <div class="mb-2">
+                  <img src="./assets/asset 10.jpeg" alt="" class="mr-4" />
+                  <p class="text-xs pt-2hover:underline cursor-pointer hover:text-orange-400">
+                    Chairs
+                  </p>
+                </div>
+                <a href="" class="text-[#007185] hover:underline hover:text-orange-400 text-xs leading-7 pt-4">Shop Now</a>
+              </div>
+            </div>
+            <!-- End of Card - 1  -->
+
+            <!-- Card - 2    -->
+            <div class="card flex flex-col px-4 items-start max-lg:px-8">
+              <h2 class="font-bold text-[21px] leading-7">Deals in PCs</h2>
+              <img src="./assets/asset 15.jpeg" alt="" class="pt-4" />
+              <a href="" class="text-[#007185] hover:underline hover:text-orange-400 text-xs leading-7 pt-4">
+                Shop Now
+              </a>
+            </div>
+            <!-- End of Card - 2    -->
+
+            <!-- Card - 3  -->
+            <div class="card bg-white flex flex-col px-4 items-start max-lg:px-7">
+              <h2 class="font-bold text-[21px] leading-7">Gaming Accessories</h2>
+              <div class="grid grid-cols-2 mt-4 gap-3">
+                <div class="mb-1">
+                  <img src="./assets/asset 11.jpeg" alt="" class="object-cover" />
+                  <p class="text-xs pt-2 hover:underline cursor-pointer hover:text-orange-400 ">Headsets</p>
+                </div>
+                <div class="mb-1">
+                  <img src="./assets/asset 12.jpeg" alt="" class="" /> 
+                  <p class="text-xs pt-2 hover:underline cursor-pointer hover:text-orange-400">Keyboards</p>
+                </div>
+                <div class="mb-1">
+                  <img src="./assets/asset 13.jpeg" alt="" class="" />
+                  <p class="text-xs pt-2 hover:underline cursor-pointer hover:text-orange-400">Computer mice</p>
+                </div>
+                <div class="mb-1">
+                  <img src="./assets/asset 14.jpeg" alt="" class="" />
+                  <p class="text-xs pt-2 hover:underline cursor-pointer hover:text-orange-400">Chairs</p>
+                </div>
+                <a href="" class="text-[#007185] hover:underline hover:text-orange-400 
+                text-xs leading-7 ">Shop Now</a>
+              </div>
+            </div>
+            <!-- End of Card - 3  -->
+
+            <!-- Card - 4 -->
+            <div class="card px-4 flex flex-col items-start ">
+              <h2 class="font-bold text-[21px] leading-7">Amazon Gadget Store</h2>
+              <div class="pb-4 mt-2">
+                <img src="./assets/asset 16.jpeg" alt="" />
+                <p class="text-xs font-medium pt-2 hover:underline hover:text-orange-400 ">Smartphones</p>
+              </div>
+              <div class="grid grid-cols-3 gap-3 mt-4">
+                <div class="">
+                  <img src="./assets/asset 17.jpeg" alt="" />
+                  <p class="text-xs pt-2 hover:underline hover:text-orange-400 ">Tablets</p>
+                </div>
+                <div class="">
+                  <img src="./assets/asset 18.jpeg" alt="" />
+                  <p class="text-xs pt-2 hover:underline hover:text-orange-400 ">Laptops</p>
+                </div>
+                <div class="">
+                  <img src="./assets/asset 19.jpeg" alt="" />
+                  <p class="text-xs pt-2 hover:underline hover:text-orange-400 ">TVs</p>
+                </div>
+              </div>
+              <a href="" class="text-[#007185] hover:underline hover:text-orange-400  text-xs leading-7 pt-2">
+                See more from Amazon Gadgets
+              </a>
+            </div>
+            <!-- End of Card - 4 -->
+
+            <!-- Card - 5  -->
+            <div class="card px-4 flex flex-col items-start max-lg:pl-4">
+              <h2 class="font-bold text-[20px] leading-7">
+                Handpicked Music & Audio
+              </h2>
+              <div class="grid grid-cols-2 gap-4 max-lg:gap-2 pt-[20px]">
+                <div>
+                  <img src="./assets/asset 20.jpeg" alt="" class="mr-4" />
+                  <p class="text-xs pt-2 hover:underline cursor-pointer hover:text-orange-400">Headphones</p>
+                </div>
+                <div>
+                  <img src="./assets/asset 21.jpeg" alt="" class="mr-4" />
+                  <p class="text-xs pt-2 hover:underline cursor-pointer hover:text-orange-400">Guitars</p>
+                </div>
+                <div>
+                  <img src="./assets/asset 22.jpeg" alt="" class="mr-4" />
+                  <p class="text-xs pt-2 hover:underline cursor-pointer hover:text-orange-400">Keyboards</p>
+                </div>
+                <div>
+                  <img src="./assets/asset 23.jpeg" alt="" class="mr-4" />
+                  <p class="text-xs pt-2 hover:underline cursor-pointer hover:text-orange-400">Microphones</p>
+                </div>
+                <a href="" class="text-[#007185] hover:underline hover:text-orange-400  text-xs leading-7 pt-2">Shop Now</a>
+              </div>
+            </div>
+            <!-- End of Card - 5  -->
+
+            <!-- Card - 6    -->
+            <div class="card px-4 flex flex-col items-start max-lg:pl-4 max-lg:pr-12">
+              <h2 class="font-bold text-[20px] ">Fill Your Easter Basket with Joy </h2>
+              <img src="./assets/asset 24.jpeg" alt="" class="pt-[20px]" />
+              <a href="" class="text-[#007185] hover:underline hover:text-orange-400 text-xs leading-7 pt-4">Shop Now</a>
+            </div>
+            <!-- End of Card - 6    -->
+
+            <!-- Card - 7 -->
+            <div class="card px-4 flex flex-col items-start max-lg:pl-4 max-lg:pr-10">
+                <h2 class="font-bold text-[20px] leading-7">
+                  Shop Deals in Fashion
+                </h2>
+                <div class="grid grid-cols-2 gap-3 pt-4">
+                  <div class="">
+                    <img
+                      src="./assets/asset 25.jpeg"
+                      alt=""
+                      class="object-contain"
+                    />
+                    <p class="text-xs hover:underline cursor-pointer hover:text-orange-400 pt-2">
+                      Jeans under $50
+                    </p>
+                  </div>
+                  <div class="">
+                    <img
+                      src="./assets/asset 26.jpeg"
+                      alt=""
+                      class="object-contain"
+                    />
+                    <p class="text-xs hover:underline cursor-pointer hover:text-orange-400 pt-2">Tops Under $25</p>
+                  </div>
+                  <div class="">
+                    <img
+                      src="./assets/asset 27.jpeg"
+                      alt=""
+                      class="object-contain"
+                    />
+                    <p class="text-xs hover:underline cursor-pointer hover:text-orange-400 pt-2">Dresses under $30</p>
+                  </div>
+                  <div class="">
+                    <img
+                      src="./assets/asset 28.jpeg"
+                      alt=""
+                      class="object-contain"
+                    />
+                    <p class="text-xs hover:underline cursor-pointer hover:text-orange-400 pt-2">Shoes under $50</p>
+                  </div>
+                  <a href="" class="text-[#007185] hover:underline 
+                  hover:text-orange-400 text-xs leading-7 pt-4">
+                    Shop Now
+                  </a>
+                </div>
+            </div>
+            <!-- End of Card - 7  -->
+
+            <!-- Card - 8    -->
+            <div class="card flex flex-col pl-4 pr-20 items-start  max-lg:pr-40">
+              <h2 class="font-bold text-[20px] mb-4 leading-7">Top Deals</h2>
+              <img
+                src="./assets/asset 29.jpeg"
+                alt=""
+                class="object-contain cursor-pointer ml-[40px] "
+              />
+              <p class="text-xs leading-7  hover:underline font-medium text-[#cc0c39]">
+                <span class="text-white bg-[#cc0c39] font-semibold p-1 mr-2 rounded-sm">
+                  Up to 29% off
+                </span>
+                  Limited time Deal
+                <p class="text-xs ">Hair & Beauty Essentials by Kitsch</p>
+              </p>
+              <a href="" class="text-[#007185] hover:underline hover:text-orange-400  text-xs leading-7 pt-2"
+                >See all deals</a
+              >
+            </div>
+            <!-- End of Card - 8    -->
+        </div>  
+        <!-- End of Card Section  -->
+
+        <div class="px-2.5 w-[98%] mx-auto py-4 bg-white mt-4">
+          <h2 class="text-[20px] leading-7 mx-2 font-semibold max-lg:mx-auto">Best Sellers in Beauty & Personal Care</h2>
+          <div class="flex items-center justify-between gap-8 overflow-x-auto object-cover">
+            <img src="./assets/asset 34.jpeg" alt="" class="h-60 w-44 object-contain">
+            <img src="./assets/asset 35.jpeg" alt="" class="h-60 w-44 object-contain">
+            <img src="./assets/asset 36.jpeg" alt="" class="h-60 w-44 object-contain">
+            <img src="./assets/asset 37.jpeg" alt="" class="h-60 w-44 object-contain">
+            <img src="./assets/asset 38.jpeg" alt="" class="h-60 w-44 object-contain">
+            <img src="./assets/asset 39.jpeg" alt="" class="h-60 w-44 object-contain">
+            <img src="./assets/asset 40.jpeg" alt="" class="h-60 w-44 object-contain">
+            <img src="./assets/asset 41.jpeg" alt="" class="h-60 w-44 object-contain">
+          </div>
+        </div>
+
+        <div class="px-2.5 w-[98%] mx-auto py-4 bg-white mt-4">
+          <h2 class="text-[20px] leading-7 font-semibold">Best Sellers in Beauty & Personal Care</h2>
+          <div class="flex items-center justify-between mx-2 overflow-hidden">
+            <img src="./assets/asset 58.jpeg" alt="">
+            <img src="./assets/asset 59.jpeg" alt="">
+            <img src="./assets/asset 60.jpeg" alt="">
+            <img src="./assets/asset 61.jpeg" alt="">
+            <img src="./assets/asset 62.jpeg" alt="">
+            <img src="./assets/asset 63.jpeg" alt="">
+          </div>
+        </div>
+        
+        <div class="mx-4 mt-4 grid grid-cols-4 gap-x-4 max-lg:grid-cols-2" >
+          <!-- Card - 1    -->
+          <div class="card flex flex-col px-4 items-start">
+            <h2 class="font-bold text-[21px] leading-7">Shop activity trackers and smartwatches</h2>
+            <img src="./assets/asset 80.jpeg" alt="" class="pt-4" />
+            <a href="" class="text-[#007185] text-xs leading-7 pt-6">
+              Shop Now
+            </a>
+          </div>
+          <!-- End of Card - 1    -->
+
+          <!-- Card - 2  -->
+          <div class="card bg-white flex flex-col px-4 items-start">
+            <h2 class="font-bold text-[21px] leading-7">Gaming Merchandise</h2>
+            <div class="grid grid-cols-2 mt-8 gap-2">
+              <div class="mb-2">
+                <img src="./assets/asset 81.jpeg" alt="" class="object-cover" />
+                <p class="text-xs pt-2">Apparel</p>
+              </div>
+              <div class="mb-2">
+              <img src="./assets/asset 82.jpeg" alt="" class="mr-4" />
+              <p class="text-xs pt-2">Hats</p>
+              </div>
+              <div class="mb-2">
+              <img src="./assets/asset 83.jpeg" alt="" class="mr-4" />
+              <p class="text-xs pt-2">Action Figures</p>
+              </div>
+              <div class="mb-2">
+              <img src="./assets/asset 84.jpeg" alt="" class="mr-4" />
+              <p class="text-xs pt-2">Mugs</p>
+              </div>
+              <a href="" class="text-[#007185] text-xs leading-7 pt-4">See more</a>
+            </div>
+          </div>
+            <!-- End of Card - 2  -->
+
+            <!-- Card - 3    -->
+            <div class="card flex flex-col px-4 items-start">
+              <h2 class="font-bold text-[21px] leading-7">Players paradise starts here</h2>
+              <img src="./assets/asset 85.jpeg" alt="" class="pt-8" />
+              <a href="" class="text-[#007185] text-xs leading-7 pt-8">
+                Shop Video games
+              </a>
+            </div>
+            <!-- End of Card - 3    -->
+
+            <!-- Card - 4    -->
+            <div class="card flex flex-col px-4 items-start">
+              <h2 class="font-bold text-[21px] leading-7">A Whole new way to work</h2>
+              <img src="./assets/asset 86.jpeg" alt="" class="pt-8" />
+              <a href="" class="text-[#007185] text-xs leading-7 pt-8">
+                Shop Personal Computers
+              </a>
+            </div>
+            <!-- End of Card - 4    -->
+
+        </div>
+
+        <div class="px-2.5 w-[98%] mx-auto py-4 bg-white mt-4">
+          <h2 class="text-[20px] leading-7 font-semibold">Best Sellers in Books</h2>
+            <div class="flex items-center justify-between mx-4 pt-4 overflow-hidden">
+              <img src="./assets/asset 87.jpeg" alt="">
+              <img src="./assets/asset 88.jpeg" alt="">
+              <img src="./assets/asset 89.jpeg" alt="">
+              <img src="./assets/asset 90.jpeg" alt="">
+              <img src="./assets/asset 91.jpeg" alt="">
+              <img src="./assets/asset 92.jpeg" alt="">
+              <img src="./assets/asset 93.jpeg" alt="">
+              <img src="./assets/asset 94.jpeg" alt="">
+            </div>
+        </div>
+        
+        <!-- Deals Under $25  -->
+        <div class="px-2.5 w-[98%] mx-auto py-4 bg-white mt-4">
+          <h2 class="text-[20px] leading-7 font-semibold">Deals Under $25
+            <a href="" class="ml-4 text-xs text-blue-600">See More</a>
+          </h2>
+          <div class="flex justify-between mx-2 items-center gap-4">
+            <!-- Card - 1 -->
+              <div class="card cursor-pointer">
+                <img src="./assets/asset 117.jpeg" alt="object-contain">
+                <p class="text-xs mt-6 font-bold text-[#cc0c39]">
+                <span class="text-xs font-medium mr-2 text-white bg-[#cc0c39] rounded-sm py-1 px-2">
+                  15% Off
+                </span>
+                Limited time deal</p>
+                <p class="mt-2 font-medium text-[#0f1111]"> $10.19 
+                  <span class="text-xs font-thin text-[#565959]">
+                    List Price:
+                  </span>
+                  <span class="text-xs font-thin text-[#565959] line-through">
+                    $11.99
+                  </span>
+                </p>
+                <p class="text-xs text-[#565959] font-bold mt-2">
+                  Play-Doh Sparkle and Scents Variety P...
+                </p>
+              </div>
+            <!-- End of Card - 1 -->
+
+            <!-- Card - 2 -->
+              <div class="card cursor-pointer">
+                <img src="./assets/asset 118.jpeg" alt="object-contain">
+                <p class="text-xs mt-6 font-bold text-[#cc0c39]">
+                <span class="text-xs font-medium mr-2 text-white bg-[#cc0c39] rounded-sm py-1 px-2">
+                  23% Off
+                </span>
+                Limited time deal</p>
+                <p class="mt-2 font-medium text-[#0f1111]"> $9.99 
+                  <span class="text-xs font-thin text-[#565959]">List Price:</span>   
+                  <span class="text-xs font-thin text-[#565959] line-through">
+                    $12.99
+                  </span>
+                </p>
+                <p class="text-xs text-[#565959] font-bold mt-2">
+                  Play-Doh Sparkle and Scents Variety P...
+                </p>
+              </div>
+            <!-- End of Card - 2 -->
+            
+            <!-- Card - 3 -->
+              <div class="card cursor-pointer">
+                <img src="./assets/Spiritual.jpeg" alt="h-[150px] w-[200px] object-contain">
+                <p class="text-xs mt-2 font-bold text-[#cc0c39]">
+                <span class="text-xs font-medium mr-2 text-white bg-[#cc0c39] rounded-sm py-1 px-2">
+                  38% Off
+                </span>
+                Limited time deal</p>
+                <p class="mt-2 font-medium text-[#0f1111]"> $10.54 
+                  <span class="text-xs font-thin text-[#565959]">List Price:</span>   
+                  <span class="text-xs font-thin text-[#565959] line-through">
+                    $16.99
+                  </span>
+                </p>
+                <p class="text-xs text-[#565959] font-bold mt-2 ">
+                  Spiritual Leadership: Principles of Exce...
+                </p>
+              </div>
+            <!-- End of Card - 3 -->
+
+            <!-- Card - 4 -->
+              <div class="card cursor-pointer">
+              <img src="./assets/asset 119.jpeg" alt="object-contain">
+              <p class="text-xs mt-6 font-bold text-[#cc0c39]">
+                <span class="text-xs font-medium mr-2 text-white bg-[#cc0c39] rounded-sm py-1 px-2">
+                  10% Off
+                </span>
+                Limited time deal
+              </p>
+              <p class="mt-2 font-medium text-[#0f1111]"> $10.79 
+                <span class="text-xs font-thin text-[#565959]">
+                  ($0.08 / Ounce)
+                  List Price:
+                </span>   
+                <span class="text-xs font-thin text-[#565959] line-through">
+                  $11.99
+                </span>
+                </p>
+                <p class="text-xs text-[#565959] font-bold mt-2 ">
+                  Quaker Old Fashioned Rolled Oats, No...
+                </p>
+              </div>
+            <!-- End of Card - 4 -->
+            
+            <!-- Card - 5 -->
+              <div class="card cursor-pointer"> 
+                <img src="./assets/asset 126.jpeg" alt="object-contain">
+                <p class="text-xs mt-6 font-bold text-[#cc0c39]">
+                  <span class="text-xs font-medium mr-2 text-white bg-[#cc0c39] rounded-sm py-1 px-2">
+                    41% Off
+                  </span>
+                  Limited time deal
+                </p>
+                <p class="mt-2 font-medium text-[#0f1111]"> $20.56 
+                  <span class="text-xs font-thin text-[#565959]">
+                    List Price:
+                  </span>   
+                  <span class="text-xs font-thin text-[#565959] line-through">
+                    $34.99
+                  </span>
+                </p>
+                <p class="text-xs text-[#565959] font-bold mt-2 ">
+                  NSRV Catholic Edition Gift Bible, Teal...
+                </p>
+              </div>
+            <!-- End of Card - 5 -->
+            
+            <!-- Card - 6 -->
+              <div class="card cursor-pointer">
+              <img src="./assets/asset 122.jpeg" alt="object-contain">
+                <p class="text-xs mt-6 font-bold text-[#cc0c39]">
+                <span class="text-xs font-medium mr-2 text-white bg-[#cc0c39] rounded-sm py-1 px-2">
+                  29% Off
+                </span>
+                Limited time deal
+              </p>
+              <p class="mt-2 font-medium text-[#0f1111]"> $19.97 
+                <span class="text-xs font-thin text-[#565959] line-through">
+                  List Price: $27.99
+                </span>
+              </p>
+              <p class="text-xs text-[#565959] font-bold mt-2">
+                Dexas MudBuster Portable...
+                </p>
+              </div>
+            <!-- End of Card - 6 -->
+            </div>
+
+
+        </div>
+
+        <div class="mx-4 mt-4 grid grid-cols-4 gap-x-4 max-lg:grid-cols-2">
+
+          <!-- Card - 1    -->
+          <div class="card flex flex-col px-4 items-start">
+            <h2 class="font-bold text-[21px] leading-7">Laptops for every need</h2>
+            <img src="./assets/asset 136.jpeg" alt="" class="pt-8" />
+            <a href="" class="text-[#007185] text-xs leading-7 pt-8">
+              Find you laptop here
+            </a>
+          </div>
+          <!-- End of Card - 1    -->
+
+          <!-- Card - 2  -->
+          <div class="card bg-white flex flex-col px-4 items-start">
+            <h2 class="font-bold text-[21px] leading-7">Warm & welcoming decor</h2>
+            <div class="grid grid-cols-2 mt-8 gap-2">
+              <div class="mb-2">
+                <img src="./assets/asset 137.jpeg" alt="" class="object-cover" />
+                <p class="text-xs pt-2">Wreaths & garlands</p>
+              </div>
+              <div class="mb-2">
+                <img src="./assets/asset 138.jpeg" alt="" class="object-cover" />
+                <p class="text-xs pt-2">Outdoor decor</p>
+              </div>
+              <div class="mb-2">
+                <img src="./assets/asset 139.jpeg" alt="" class="object-cover" />
+                <p class="text-xs pt-2">Pillows & throws</p>
+              </div>
+              <div class="mb-2">
+                <img src="./assets/asset 140.jpeg" alt="" class="object-cover" />
+                <p class="text-xs pt-2">Wall art & mirrors</p>
+              </div>
+                <a href="" class="text-[#007185] text-xs leading-7 pt-4">Shop more fall finds</a>
+            </div>
+          </div>
+          <!-- End of Card - 2  -->
+
+          <!-- Card - 3    -->
+          <div class="card flex flex-col px-4 items-start">
+            <h2 class="font-bold text-[21px] leading-7">Creating Business Solutions</h2>
+            <img src="./assets/asset 141.jpeg" alt="" class="pt-8" />
+            <a href="" class="text-[#007185] text-xs leading-7 pt-8">
+              See more software products
+            </a>
+          </div>
+          <!-- End of Card - 3    -->
+
+          <!-- Card - 4    -->
+          <div class="card flex flex-col px-4 items-start">
+            <h2 class="font-bold text-[21px] leading-7">Personal Care under $25</h2>
+            <img src="./assets/asset 142.jpeg" alt="" class="pt-8 object-center" />
+            <a href="" class="text-[#007185] text-xs leading-7 pt-8">
+              See more
+            </a>
+          </div>
+          <!-- End of Card - 4    -->
+
+        </div>
+
+        <div class="px-2.5 w-[98%] mx-auto py-4 bg-white mt-4">
+          <h2 class="text-[20px] leading-7 font-semibold">Best Sellers in Sports & Outdoors</h2>
+          <div class="flex items-center gap-4 justify-between mx-4 pt-4 overflow-hidden">
+            <img src="./assets/asset 143.jpeg" alt="" class="h-60 w-44 object-contain">
+            <img src="./assets/asset 144.jpeg" alt="" class="h-60 w-44 object-contain">
+            <img src="./assets/asset 145.jpeg" alt="" class="h-60 w-44 object-contain">
+            <img src="./assets/asset 146.jpeg" alt="" class="h-60 w-44 object-contain">
+            <img src="./assets/asset 147.jpeg" alt="" class="h-60 w-44 object-contain">
+            <img src="./assets/asset 148.jpeg" alt="" class="h-60 w-44 object-contain">
+            <img src="./assets/asset 149.jpeg" alt="" class="h-60 w-44 object-contain">
+            <img src="./assets/asset 150.jpeg" alt="" class="h-60 w-44 object-contain">
+          </div>
+        </div>
+
+        <div class="px-2.5 w-[98%] mx-auto py-4 bg-white mt-4">
+          <h2 class="text-[20px] leading-7 font-semibold">Best Sellers in Kitchen and Dining</h2>
+          <div class="flex items-center gap-4 justify-between mx-4 pt-4 overflow-hidden">
+            <img src="./assets/asset 169.jpeg" alt="" class="h-60 w-40 object-contain">
+            <img src="./assets/asset 170.jpeg" alt="" class="h-60 w-40 object-contain">
+            <img src="./assets/asset 171.jpeg" alt="" class="h-60 w-40 object-contain">
+            <img src="./assets/asset 172.jpeg" alt="" class="h-60 w-40 object-contain">
+            <img src="./assets/asset 173.jpeg" alt="" class="h-60 w-40 object-contain">
+            <img src="./assets/asset 174.jpeg" alt="" class="h-60 w-40 object-contain">
+            <img src="./assets/asset 175.jpeg" alt="" class="h-60 w-40 object-contain">
+            <img src="./assets/asset 176.jpeg" alt="" class="h-60 w-40 object-contain">
+          </div>
+        </div>
+
+        <div class="px-2.5 w-[98%] mx-auto py-4 bg-white mt-4">
+          <h2 class="text-[20px] leading-7 font-semibold">Best Sellers in Kitchen and Dining</h2>
+          <div class="flex items-center gap-4 justify-between mx-4 pt-4 overflow-hidden">
+            <img src="./assets/asset 195.jpeg" alt="" class="h-60 w-40 object-contain">
+            <img src="./assets/asset 196.jpeg" alt="" class="h-60 w-40 object-contain">
+            <img src="./assets/asset 197.jpeg" alt="" class="h-60 w-40 object-contain">
+            <img src="./assets/asset 198.jpeg" alt="" class="h-60 w-40 object-cover">
+            <img src="./assets/asset 199.jpeg" alt="" class="h-60 w-40 object-contain">
+            <img src="./assets/asset 200.jpeg" alt="" class="h-60 w-40 object-contain">
+            <img src="./assets/asset 201.jpeg" alt="" class="h-60 w-40 object-contain">
+          </div>
+        </div>
+      </section>
+      <!-- End of Main Section  -->
+
+      <!-- Footer Section  -->
+      <footer>
+        <div class="bg-slate-700 py-4 mt-6 text-center text-white text-sm"><a href="">Back to Top</a></div>
+        <div class=" flex flex-col items-center justify-between flex-wrap bg-slate-800">
+          
+          <!-- Footer Links  -->
+          <div class="w-[1080px] mx-auto pt-12 text-white grid xl:grid-cols-4  lg:grid-cols-2 sm:grid-cols-2 sm:gap-10 sm:w-[80%] items-start xl:p-16 lg:p-8">
+            <div>
+              <p class="font-bold">Get to Know Us</p>
+              <ul class="text-sm py-4">
+                <li class="text-sm leading-7"> Careers</li>
+                <li class="text-sm leading-7"> Blog</li>
+                <li class="text-sm leading-7"> About Amazon</li>
+                <li class="text-sm leading-7"> Investor Relations</li>
+                <li class="text-sm leading-7"> Amazon Devices</li>
+                <li class="text-sm leading-7"> Amazon Science</li>
+              </ul>
+            </div>
+
+            <div>
+              <p class="font-bold">Make Money with Us</p>
+              <ul class="text-sm py-4">
+                <li class="text-sm leading-7">Sell products on Amazon</li>
+                <li class="text-sm leading-7">Sell on Amazon Business</li>
+                <li class="text-sm leading-7">Sell apps on Amazon</li>
+                <li class="text-sm leading-7">Become an Affiliate</li>
+                <li class="text-sm leading-7">Advertise Your Products</li>
+                <li class="text-sm leading-7">Self-Publish with Us</li>
+                <li class="text-sm leading-7">Host an Amazon Hub</li>
+                <li class="text-sm leading-7"><b class="text-lg">›</b> &nbsp;See More Make Money with Us</li>
+              </ul>
+            </div>
+
+            <div>
+              <p class="font-bold">Amazon Payment Products</p>
+              <ul class="text-sm py-4">
+                <li class="text-sm leading-7">Amazon Business Card</li>
+                <li class="text-sm leading-7">Shop with Points</li>
+                <li class="text-sm leading-7">Reload Your Balance</li>
+                <li class="text-sm leading-7">Amazon Currency Converter</li>
+              </ul>
+            </div>
+
+            <div>
+              <p class="font-bold">Let Us Help You</p>
+              <ul class="text-sm py-4">
+                <li class="text-sm leading-7">Amazon and COVID-19</li>
+                <li class="text-sm leading-7">Your Account</li>
+                <li class="text-sm leading-7">Your Orders</li>
+                <li class="text-sm leading-7">Shipping Rates & Policies</li>
+                <li class="text-sm leading-7">Returns & Replacements</li>
+                <li class="text-sm leading-7">Manage Your Content and Devices</li>
+                <li class="text-sm leading-7">Amazon Assistant</li>
+                <li class="text-sm leading-7">Help</li>
+              </ul>
+            </div>
+          </div>
+          <!-- End of Footer Links  -->
+          
+          <!-- Amazon HR line  -->
+          <div class="w-[620px] flex sm:w-[80%] pb-12 mx-auto justify-between items-center">
+            <img src="./assets/logo.png" alt="" class="h-15 w-20 sm:ml-6">
+            <div>
+              <select name="" id="" class="bg-slate-800 text-xs border-[1px] pl-1 pr-8 py-1 rounded-md text-white mr-5">
+                <option value="" class="">English</option>
+              </select>
+
+              <select name="" id=""  class="bg-slate-800 text-xs border-[1px] pl-1 pr-8 py-1 rounded-md  text-white mr-5">
+                <option value="">$ USD - U.S. Dollar</option>
+              </select>
+
+              <select name="" id=""  class="bg-slate-800 text-xs border-[1px] pl-1 pr-8 py-1 rounded-md  text-white mr-5">
+                <option value=""> <img src="./assets/India.png" alt="" class="h-4 w-5">India</option>
+              </select>
+
+            </div>
+          </div>
+          <!--End of Amazon HR line  -->
+          
+          <!-- Nav Footer Link  -->
+          <div class="bg-slate-900 w-full text-white py-12">
+            <div class="w-[1000px] mx-auto flex flex-col max-xl:gap-8 max-xl:w-[50%] max-lg:w-[50%] max-xl:flex-row max-lg:justify-center max-lg:gap-16">
+
+              <!-- Line-1  -->
+              <div class="grid xl:grid-cols-7">
+                <!-- Amazon Music  -->
+                <div class="pb-4">
+                  <p class="text-xs">Amazon Music</p>
+                  <p class="text-xs text-[#999999]">Stream Million <br> of Songs</p>
+                </div>
+                
+                <!-- Amazon Ads  -->
+                <div class="pb-4">
+                  <p class="text-xs">Amazon Ads</p>
+                  <p class="text-xs text-[#999999]">Reach customers <br> wherever they <br> spend their time.</p>
+                </div>
+                
+                <!-- 6pm -->
+                <div class="pb-4">
+                  <p class="text-xs">6pm</p>
+                  <p class="text-xs text-[#999999]">Score deals <br> on fashion <br> brands.</p>
+                </div>
+
+                <!-- AbeBooks -->
+                <div class="pb-4">
+                  <p class="text-xs">AbeBooks</p>
+                  <p class="text-xs text-[#999999]">Books, art <br> & collectibles</p>
+                </div>
+
+                <!-- ACX  -->
+               <div class="pb-4">
+                <p class="text-xs">ACX</p>
+                <p class="text-xs text-[#999999]">Audiobook Publishing <br> Made Easy.</p>
+                </div>
+
+                <!-- Sell on Amazon -->
+                <div class="pb-4">
+                  <p class="text-xs">Sell on Amazon</p>
+                  <p class="text-xs text-[#999999]">Start a Selling <br> Account</p>
+                </div>
+
+                <!-- Amazon Business  --> 
+                <div class="pb-4">
+                  <p class="text-xs">Amazon <br> Business</p>
+                  <p class="text-xs text-[#999999]">Everything <br> for <br> Your <br> Business</p>
+                </div>
+
+              </div>
+              <!-- End of Line-1  -->
+
+              <!-- Line-2  -->
+              <div class="grid xl:grid-cols-7 ">
+                
+                <!-- Amazon Global  -->
+                <div class="pb-4">
+                  <p class="text-xs">Amazon Global</p>
+                  <p class="text-xs text-[#999999]">Ship Orders <br>Intentionally</p>
+                </div>
+                
+                <!-- Home Services  -->
+                <div class="pb-4">
+                <p class="text-xs">Home Services</p>
+                <p class="text-xs text-[#999999]">Experienced Pros <br> Happiness <br> Guarantee</p>
+                </div>
+                
+                <!-- Amazon Web Services-->
+                <div class="pb-4">
+                <p class="text-xs">Amazon Web <br> Services</p>
+                <p class="text-xs text-[#999999]">Scalable Cloud <br> Computing <br> Services</p>
+                </div>
+
+                <!-- Audible -->
+                <div class="pb-4">
+                  <p class="text-xs">Audible</p>
+                  <p class="text-xs text-[#999999]">Listen to Books & <br> Original <br> Audio <br> Performances</p>
+                </div>
+
+                <!-- <Box Office Mojo -->
+                <div class="pb-4">
+                  <p class="text-xs">Box Office Mojo</p>
+                  <p class="text-xs text-[#999999]">Find Movie <br> Box Office Data</p>
+                </div>
+
+                <!-- Goodreads -->
+                <div class="pb-4">
+                  <p class="text-xs">Goodreads</p>
+                  <p class="text-xs text-[#999999]">Book reviews <br> & <br> recommendations</p>
+                </div>
+
+                <!-- IMDB  --> 
+                <div class="pb-4">
+                    <p class="text-xs">IMDB</p>
+                    <p class="text-xs text-[#999999]">Movies, TV <br>& Celebrities</p>
+                </div>
+
+              </div>
+              <!-- End of Line-2  -->
+              
+              <!-- Line-3  -->
+              <div class="grid xl:grid-cols-7 ">
+                
+                <!-- IMDbPro  -->
+                <div class="pb-4">
+                  <p class="text-xs">IMDbPro</p>
+                  <p class="text-xs text-[#999999]">Get Info <br> Entertainment <br> Professionals <br>Need</p>
+                </div>
+                
+                <!-- Kindle Direct Publishing  -->
+                <div class="pb-4">
+                  <p class="text-xs">	Kindle Direct <br> Publishing</p>
+                  <p class="text-xs text-[#999999]">Indie Digital & <br> Print Publishing <br> Made Easy</p>
+                </div>
+                
+                <!-- Prime Video Direct-->
+                <div class="pb-4">
+                  <p class="text-xs">Prime Video Direct</p>
+                  <p class="text-xs text-[#999999]">Video <br> Distribution <br> Made Easy</p>
+                </div>
+
+                <!-- Shopbop -->
+                <div class="pb-4">
+                  <p class="text-xs">Shopbop</p>
+                  <p class="text-xs text-[#999999]">Designer <br> Fashion Brands</p>
+                </div>
+
+                <!-- Woot! -->
+                <div class="pb-4">
+                    <p class="text-xs">Woot!</p>
+                    <p class="text-xs text-[#999999]">Deals and <br> Shenanigans</p>
+                </div>
+
+                <!-- Zappos -->
+                <div class="pb-4">
+                  <p class="text-xs">Zappos</p>
+                  <p class="text-xs text-[#999999]">Shoes & <br> Clothing</p>
+                </div>
+
+                <!-- Ring --> 
+                <div class="pb-4">
+                    <p class="text-xs">Ring</p>
+                    <p class="text-xs text-[#999999]">Smart Home <br> Security <br> Systems.</p>
+                </div>
+              </div>
+              <!-- End of Line-3  -->
+
+              <!-- Line-4  -->
+              <div class="grid xl:grid-cols-7">
+                
+                <div class="pb-4">
+                  <p class="text-xs"></p>
+                  <p class="text-xs text-[#999999]"></p> 
+                </div>
+                <!-- Eero WiFi  -->
+                <div class="pb-4">
+                  <p class="text-xs">eero WiFi</p>
+                  <p class="text-xs text-[#999999]">Stream 4K Video <br> in Every Room	</p> 
+                </div>
+                
+                <!-- Blink  -->
+                <div class="pb-4">
+                  <p class="text-xs">Blink</p>
+                  <p class="text-xs text-[#999999]">Smart Security <br> for Every <br> Home</p>
+                </div>
+                
+                <!-- Neighbors App -->
+                <div class="pb-4">
+                  <p class="text-xs">Neighbors App</p>
+                  <p class="text-xs text-[#999999]">Real-Time Crime <br> & Safety Alerts</p>
+                </div>
+
+              <!-- Amazon Subscription -->
+                <div class="pb-4">
+                  <p class="text-xs">Amazon Subscription <br> Boxes</p>
+                  <p class="text-xs text-[#999999]">Top subscription boxes <br> – right to your door</p>
+                </div>
+
+              <!-- PillPack -->
+                <div class="pb-4">
+                  <p class="text-xs">PillPack</p>
+                  <p class="text-xs text-[#999999]">Pharmacy <br> Simplified</p>
+                </div>
+
+                <div class="pb-4">
+                  <p class="text-xs"></p>
+                  <p class="text-xs text-[#999999]"></p> 
+                </div>
+
+              </div>
+              <!-- End of Line-4  -->
+
+            </div>
+          </div>
+
+
+
+          <div class="flex flex-col text-xs bg-slate-950 w-full py-4 text-white justify-center items-center">
+            <div class="flex pb-2">
+              <p class="mr-4">Condition of Use</p>
+              <p class="mr-4">Privacy Notice</p>
+              <p class="mr-4">Your Ads PrivacyChoices</p>
+            </div>
+            <p class="pb-2">&copy; 1996-2024, Amazon.com,Inc. or its Affiliates</p>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer Section  -->
+
+
+
+    </div>
+  </body>
+</html>
