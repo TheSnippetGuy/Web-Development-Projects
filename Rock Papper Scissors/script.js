@@ -12,7 +12,11 @@ compScore.innerText = 0;
 
 let options = ["rock", "paper", "scissors"];
 
-let computerChoice = options[Math.floor(Math.random() * 3)];
+function computerChoice() {
+  return options[Math.floor(Math.random() * 3)];
+}
+
+let compChoice = "";
 
 function addColor(btn1, btn2, btn3) {
   btn1.classList.add("active");
@@ -36,22 +40,23 @@ scissorsBtn.addEventListener("click", () => {
 });
 
 function playGame() {
-  if (userChoice === computerChoice) {
+  compChoice = computerChoice();
+  if (userChoice === compChoice) {
     drawGame();
   } else if (userChoice === "rock") {
-    if (computerChoice === "scissors") {
+    if (compChoice === "scissors") {
       userWin();
     } else {
       computerWin();
     }
   } else if (userChoice === "paper") {
-    if (computerChoice === "rock") {
+    if (compChoice === "rock") {
       userWin();
     } else {
       computerWin();
     }
   } else if (userChoice === "scissors") {
-    if (computerChoice === "paper") {
+    if (compChoice === "paper") {
       userWin();
     } else {
       computerWin();
@@ -61,7 +66,7 @@ function playGame() {
 
 function drawGame() {
   result.classList.add("tied");
-  result.innerText = `Game Draw...! Your Choice was ${userChoice} and computer Choice was ${computerChoice}  😤😤😤`;
+  result.innerText = `Game Draw...! Your Choice was ${userChoice} and computer Choice was ${compChoice}😤😤😤`;
   setTimeout(() => {
     result.classList.remove("tied");
   }, 2000);
@@ -69,7 +74,7 @@ function drawGame() {
 
 function userWin() {
   result.classList.add("win");
-  result.innerText = `Your Choice was ${userChoice} and computer Choice was ${computerChoice} Congrats.! You Win...!😍😍😍`;
+  result.innerText = `Your Choice was ${userChoice} and computer Choice was ${compChoice} Congrats.! You Win...!😍😍😍`;
   userScore.innerText++;
   setTimeout(() => {
     result.classList.remove("win");
@@ -77,7 +82,7 @@ function userWin() {
 }
 function computerWin() {
   result.classList.add("lose");
-  result.innerText = `Your Choice was ${userChoice} and computer Choice was ${computerChoice} Computer Win...! Better Luck Next Time...!😥😥😥`;
+  result.innerText = `Your Choice was ${userChoice} and computer Choice was ${compChoice} Computer Win...! Better Luck Next Time...!😥😥😥`;
   compScore.innerText++;
   setTimeout(() => {
     result.classList.remove("lose");
