@@ -23,7 +23,7 @@
   <body>
     <div class="wrapper h-[100%] w-[100%] overflow-hidden">
       <!-- Header Section  -->
-      <header>
+      <header class="w-[100%]">
         <!-- Navbar section  -->
         <nav class="text-white bg-slate-900 h-[60px] flex justify-evenly px-4 max-lg:justify-between items-center">
           <!-- logo -->
@@ -114,7 +114,7 @@
 
         <!-- Header Links  -->
         <div
-          class="bg-slate-800 text-[14px]  text-white py-2 px-6 flex items-center max-lg:items-baseline max-lg:justify-evenly justify-start"
+          class="bg-slate-800 text-[14px]  text-white py-2 px-6 flex items-center max-lg:items-baseline max-lg:justify-start justify-start"
         >
           <p
             class="mr-4 font-bold text-[16px] p-1 border hover:cursor-pointer hover:rounded-sm border-transparent hover:border-white"
@@ -192,7 +192,7 @@
             <!-- End of Card - 1  -->
 
             <!-- Card - 2    -->
-            <div class="card flex flex-col px-4 items-start max-lg:px-8">
+            <div class="card flex flex-col px-4 items-start max-lg:px-8 ">
               <h2 class="font-bold text-[21px] leading-7">Deals in PCs</h2>
               <img src="./assets/asset 15.jpeg" alt="" class="pt-4" />
               <a href="" class="text-[#007185] hover:underline hover:text-orange-400 text-xs leading-7 pt-4">
@@ -283,7 +283,7 @@
 
             <!-- Card - 6    -->
             <div class="card px-4 flex flex-col items-start max-lg:pl-4 max-lg:pr-12">
-              <h2 class="font-bold text-[20px] ">Fill Your Easter Basket with Joy </h2>
+              <h2 class="font-bold text-[20px] max-lg:pb-2">Fill Your Easter Basket with Joy </h2>
               <img src="./assets/asset 24.jpeg" alt="" class="pt-[20px]" />
               <a href="" class="text-[#007185] hover:underline hover:text-orange-400 text-xs leading-7 pt-4">Shop Now</a>
             </div>
@@ -339,11 +339,11 @@
 
             <!-- Card - 8    -->
             <div class="card flex flex-col pl-4 pr-20 items-start  max-lg:pr-40">
-              <h2 class="font-bold text-[20px] mb-4 leading-7">Top Deals</h2>
+              <h2 class="font-bold text-[20px] mb-4 max-lg:mb-6 leading-7">Top Deals</h2>
               <img
                 src="./assets/asset 29.jpeg"
                 alt=""
-                class="object-contain cursor-pointer ml-[40px] "
+                class="object-contain cursor-pointer ml-[40px] max-lg:mb-4"
               />
               <p class="text-xs leading-7  hover:underline font-medium text-[#cc0c39]">
                 <span class="text-white bg-[#cc0c39] font-semibold p-1 mr-2 rounded-sm">
@@ -361,7 +361,7 @@
         <!-- End of Card Section  -->
 
         <div class="px-2.5 w-[98%] mx-auto py-4 bg-white mt-4">
-          <h2 class="text-[20px] leading-7 mx-2 font-semibold max-lg:mx-auto">Best Sellers in Beauty & Personal Care</h2>
+          <h2 class="text-[20px] leading-7 mx-2 font-semibold max-lg:mx-auto max-lg:overflow-x-scroll">Best Sellers in Beauty & Personal Care</h2>
           <div class="flex items-center justify-between gap-8 overflow-x-auto object-cover">
             <img src="./assets/asset 34.jpeg" alt="" class="h-60 w-44 object-contain">
             <img src="./assets/asset 35.jpeg" alt="" class="h-60 w-44 object-contain">
@@ -374,9 +374,9 @@
           </div>
         </div>
 
-        <div class="px-2.5 w-[98%] mx-auto py-4 bg-white mt-4">
-          <h2 class="text-[20px] leading-7 font-semibold">Best Sellers in Beauty & Personal Care</h2>
-          <div class="flex items-center justify-between mx-2 overflow-hidden">
+        <div class="px-2.5 w-[98%] mx-auto py-4 bg-white mt-4 ">
+          <h2 class="text-[20px] leading-7 font-semibold">Most wished for in Video Games</h2>
+          <div class="flex items-center justify-between gap-8 mx-2 max-lg:overflow-x-scroll">
             <img src="./assets/asset 58.jpeg" alt="">
             <img src="./assets/asset 59.jpeg" alt="">
             <img src="./assets/asset 60.jpeg" alt="">
@@ -446,7 +446,7 @@
 
         <div class="px-2.5 w-[98%] mx-auto py-4 bg-white mt-4">
           <h2 class="text-[20px] leading-7 font-semibold">Best Sellers in Books</h2>
-            <div class="flex items-center justify-between mx-4 pt-4 overflow-hidden">
+            <div class="flex items-center justify-between gap-4 mx-4 pt-4 overflow-x-scroll">
               <img src="./assets/asset 87.jpeg" alt="">
               <img src="./assets/asset 88.jpeg" alt="">
               <img src="./assets/asset 89.jpeg" alt="">
@@ -463,11 +463,11 @@
           <h2 class="text-[20px] leading-7 font-semibold">Deals Under $25
             <a href="" class="ml-4 text-xs text-blue-600">See More</a>
           </h2>
-          <div class="flex justify-between mx-2 items-center gap-4">
+          <div class="flex flex-wrap mx-auto justify-between items-center">
             <!-- Card - 1 -->
-              <div class="card cursor-pointer">
+              <div class="card cursor-pointer pr-4">
                 <img src="./assets/asset 117.jpeg" alt="object-contain">
-                <p class="text-xs mt-6 font-bold text-[#cc0c39]">
+                <p class="text-xs mt-6 max-lg:pt-16 font-bold text-[#cc0c39]">
                 <span class="text-xs font-medium mr-2 text-white bg-[#cc0c39] rounded-sm py-1 px-2">
                   15% Off
                 </span>
@@ -487,9 +487,9 @@
             <!-- End of Card - 1 -->
 
             <!-- Card - 2 -->
-              <div class="card cursor-pointer">
+              <div class="card cursor-pointer pr-4">
                 <img src="./assets/asset 118.jpeg" alt="object-contain">
-                <p class="text-xs mt-6 font-bold text-[#cc0c39]">
+                <p class="text-xs max-lg:pt-8 mt-6 font-bold text-[#cc0c39]">
                 <span class="text-xs font-medium mr-2 text-white bg-[#cc0c39] rounded-sm py-1 px-2">
                   23% Off
                 </span>
@@ -507,9 +507,9 @@
             <!-- End of Card - 2 -->
             
             <!-- Card - 3 -->
-              <div class="card cursor-pointer">
+              <div class="card cursor-pointer pr-4">
                 <img src="./assets/Spiritual.jpeg" alt="h-[150px] w-[200px] object-contain">
-                <p class="text-xs mt-2 font-bold text-[#cc0c39]">
+                <p class="text-xs mt-2 max-lg:pt-4 font-bold text-[#cc0c39]">
                 <span class="text-xs font-medium mr-2 text-white bg-[#cc0c39] rounded-sm py-1 px-2">
                   38% Off
                 </span>
@@ -527,9 +527,9 @@
             <!-- End of Card - 3 -->
 
             <!-- Card - 4 -->
-              <div class="card cursor-pointer">
+              <div class="card cursor-pointer pr-4">
               <img src="./assets/asset 119.jpeg" alt="object-contain">
-              <p class="text-xs mt-6 font-bold text-[#cc0c39]">
+              <p class="text-xs mt-6 font-bold max-lg:pt-10 text-[#cc0c39]">
                 <span class="text-xs font-medium mr-2 text-white bg-[#cc0c39] rounded-sm py-1 px-2">
                   10% Off
                 </span>
@@ -551,7 +551,7 @@
             <!-- End of Card - 4 -->
             
             <!-- Card - 5 -->
-              <div class="card cursor-pointer"> 
+              <div class="card cursor-pointer pr-4"> 
                 <img src="./assets/asset 126.jpeg" alt="object-contain">
                 <p class="text-xs mt-6 font-bold text-[#cc0c39]">
                   <span class="text-xs font-medium mr-2 text-white bg-[#cc0c39] rounded-sm py-1 px-2">
@@ -574,9 +574,9 @@
             <!-- End of Card - 5 -->
             
             <!-- Card - 6 -->
-              <div class="card cursor-pointer">
+              <div class="card cursor-pointer pr-4">
               <img src="./assets/asset 122.jpeg" alt="object-contain">
-                <p class="text-xs mt-6 font-bold text-[#cc0c39]">
+                <p class="text-xs mt-6 font-bold text-[#cc0c39] max-lg:pt-8">
                 <span class="text-xs font-medium mr-2 text-white bg-[#cc0c39] rounded-sm py-1 px-2">
                   29% Off
                 </span>
@@ -592,8 +592,8 @@
                 </p>
               </div>
             <!-- End of Card - 6 -->
-            </div>
-
+          </div>
+        </div>
 
         </div>
 
@@ -656,9 +656,10 @@
 
         </div>
 
+
         <div class="px-2.5 w-[98%] mx-auto py-4 bg-white mt-4">
           <h2 class="text-[20px] leading-7 font-semibold">Best Sellers in Sports & Outdoors</h2>
-          <div class="flex items-center gap-4 justify-between mx-4 pt-4 overflow-hidden">
+          <div class="flex items-center gap-8 justify-between mx-4 pt-4 overflow-x-scroll">
             <img src="./assets/asset 143.jpeg" alt="" class="h-60 w-44 object-contain">
             <img src="./assets/asset 144.jpeg" alt="" class="h-60 w-44 object-contain">
             <img src="./assets/asset 145.jpeg" alt="" class="h-60 w-44 object-contain">
@@ -672,7 +673,7 @@
 
         <div class="px-2.5 w-[98%] mx-auto py-4 bg-white mt-4">
           <h2 class="text-[20px] leading-7 font-semibold">Best Sellers in Kitchen and Dining</h2>
-          <div class="flex items-center gap-4 justify-between mx-4 pt-4 overflow-hidden">
+          <div class="flex items-center gap-8 justify-between mx-4 pt-4 overflow-x-scroll">
             <img src="./assets/asset 169.jpeg" alt="" class="h-60 w-40 object-contain">
             <img src="./assets/asset 170.jpeg" alt="" class="h-60 w-40 object-contain">
             <img src="./assets/asset 171.jpeg" alt="" class="h-60 w-40 object-contain">
@@ -686,7 +687,7 @@
 
         <div class="px-2.5 w-[98%] mx-auto py-4 bg-white mt-4">
           <h2 class="text-[20px] leading-7 font-semibold">Best Sellers in Kitchen and Dining</h2>
-          <div class="flex items-center gap-4 justify-between mx-4 pt-4 overflow-hidden">
+          <div class="flex items-center gap-8 justify-between mx-4 pt-4 overflow-x-scroll">
             <img src="./assets/asset 195.jpeg" alt="" class="h-60 w-40 object-contain">
             <img src="./assets/asset 196.jpeg" alt="" class="h-60 w-40 object-contain">
             <img src="./assets/asset 197.jpeg" alt="" class="h-60 w-40 object-contain">
@@ -972,8 +973,6 @@
             </div>
           </div>
 
-
-
           <div class="flex flex-col text-xs bg-slate-950 w-full py-4 text-white justify-center items-center">
             <div class="flex pb-2">
               <p class="mr-4">Condition of Use</p>
@@ -985,8 +984,6 @@
         </div>
       </footer>
       <!-- End of Footer Section  -->
-
-
 
     </div>
   </body>

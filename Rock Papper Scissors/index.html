@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="game-container">
+        <h1>Rock Paper Scissors Game</h1>
+        <!-- Icons Section  -->
+        <div class="icon-container">
+          <!-- Rock container -->
+          <div class="box">
+            <div class="image-section">
+              <img src="./rock1.png" alt="" />
+            </div>
+            <button id="rock" class="icons">Rock</button>
+          </div>
+          <!-- End of Rock container -->
+
+          <!-- Paper container -->
+          <div class="box">
+            <div class="image-section">
+              <img src="./paper1.png" alt="" />
+            </div>
+            <button id="paper" class="icons">Paper</button>
+          </div>
+          <!-- End of Paper container -->
+
+          <!-- Scissors container -->
+          <div class="box">
+            <div class="image-section">
+              <img src="./rock1.png" alt="" />
+            </div>
+            <button id="scissors" class="icons">Scissors</button>
+          </div>
+          <!-- End of Scissors container -->
+        </div>
+        <!-- Icons Section  -->
+
+        <!-- Scoreboard Section  -->
+        <div class="scoreboard">
+          <div class="score">
+            <p class="user-score">0</p>
+            <p>Your Score</p>
+          </div>
+          <div class="score">
+            <p class="comp-score">0</p>
+            <p>Computer Score</p>
+          </div>
+        </div>
+        <!-- End of Scoreboard Section  -->
+
+        <!-- Result ParaGraph -->
+        <p id="result"></p>
+        <!-- End of Result Paragraph  -->
+
+        <div class="gameBtn">
+          <!-- submit section  -->
+          <button id="submit">Submit</button>
+          <!-- End submit section  -->
+
+          <!-- submit section  -->
+          <button id="reset">Reset</button>
+          <!-- End submit section  -->
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
