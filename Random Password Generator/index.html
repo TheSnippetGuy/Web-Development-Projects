@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="password-container">
+        <h1>Password Generator</h1>
+        <div class="password-text">
+          <input
+            type="text"
+            name=""
+            id="inputDisplay"
+            placeholder="Click Generate"
+          />
+          <button class="copy-btn">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="length-main">
+          <p>Length:</p>
+          <p class="length-display">0</p>
+        </div>
+        <div class="slider-container">
+          <input type="range" name="" id="" min="1" max="20" class="slider" />
+        </div>
+        <div class="option">
+          <p>Include Uppercase</p>
+          <div class="toggle-container">
+            <input type="checkbox" name="" id="uppercase" />
+            <label for="uppercase" class="button"></label>
+          </div>
+        </div>
+        <div class="option">
+          <p>Include Lowercase</p>
+          <div class="toggle-container">
+            <input type="checkbox" name="" id="lowercase" />
+            <label for="lowercase" class="button"></label>
+          </div>
+        </div>
+        <div class="option">
+          <p>Include Digits</p>
+          <div class="toggle-container">
+            <input type="checkbox" name="" id="numbers" />
+            <label for="numbers" class="button"></label>
+          </div>
+        </div>
+        <div class="option">
+          <p>Include Symbols</p>
+          <div class="toggle-container">
+            <input type="checkbox" name="" id="symbols" />
+            <label for="symbols" class="button"></label>
+          </div>
+        </div>
+        <div class="strength-main">
+          <p>Strength</p>
+          <p class="password-strength"></p>
+        </div>
+        <button class="generate">Generate</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
